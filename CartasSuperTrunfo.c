@@ -16,6 +16,10 @@ int main() {
     float pib1;
     int pTuristicos;
     int pTuristicos1;
+    float densidade;
+    float pCapita;
+    float densidade1;
+    float pCapita1;
 
 
 //Cadastro da carta 1 - Pega e salva no scanf.
@@ -44,6 +48,16 @@ int main() {
     scanf(" %d",&pTuristicos);
 
 
+//Calcula a densidade populacional da cidade
+
+    densidade=populacao/area;
+
+
+//Calcula o pib per capita.
+
+    pCapita=pib/populacao;
+
+
 //Printa a carta 1 na tela o que foi salvo.
 
     printf("\n\nCarta 1:\n\n");
@@ -62,8 +76,9 @@ int main() {
 
     printf("Número de Pontos Turísticos:%d\n",pTuristicos);
 
+    printf("Densidade Populacional: %.2f hab/km²\n",densidade);
 
-
+    printf("PIB per Capita: %.2f reais\n",pCapita);
 
 
 //Cadastro da carta 2 - Pega e salva no scanf.
@@ -92,6 +107,18 @@ int main() {
     scanf(" %d",&pTuristicos1);
     
 
+
+//Calcula a densidade populacional da cidade 2
+
+    densidade1=populacao1/area1;
+
+
+//Calcula o pib da cidade 2 per capita.
+
+    pCapita1=pib1/populacao1;
+
+
+
 //Printa a carta 2 na tela o que foi salvo.
 
     printf("\n\nCarta 2:\n\n");
@@ -109,6 +136,10 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n",pib1);
 
     printf("Número de Pontos Turísticos:%d\n",pTuristicos1);
+
+    printf("Densidade Populacional: %.2f hab/km²\n",densidade);
+
+    printf("PIB per Capita: %.2f reais\n",pCapita);
 
 
     return 0;
